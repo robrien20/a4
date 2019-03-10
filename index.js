@@ -1,15 +1,15 @@
 var info = [
-  {'park': 'Smoky Mountains'},
+  {'park': 'Smoky Mountains', 'acres': 522427, 'peak visitation': 'July', 'fun fact': 'The Smoky Mountains are among the oldest in the world - it is estimated the mountains in the Great Smoky Mountains National Park are between 200 and 300 million years old.'},
   {'park': 'Grand Canyon', 'acres': 1217403, 'peak visitation': 'July', 'fun fact': 'The Grand Canyon is ~70 million years old, carved by the Colorado River.'},
   {'park': 'Zion', 'acres': 147551, 'peak visitation': 'July', 'fun fact': "Visitors can choose to explore Zion's The Subway, which involves rapelling and swimming."},
-  {'park': 'Rocky Mountains'},
+  {'park': 'Rocky Mountains', 'acres': 265461, 'peak visitation': 'July', 'fun fact': 'The Rocky Mountains are 76 million years old and their highest peak is Mount Elbert in Colorado which is 14,440 feet tall'},
   {'park': 'Yosemite', 'acres': 761266, 'peak visitation': 'July', 'fun fact': 'During mid-late February, the waterfall Horsetail Fall appears to glow during sunsets.'},
   {'park': 'Yellowstone', 'acres': 2200000, 'peak visitation': 'July', 'fun fact': 'Yellowstone is thought to be the first national park in the world.'},
-  {'park': 'Acadia'},
-  {'park': 'Olympic'},
-  {'park': 'Grand Teton'},
-  {'park': 'Glacier', 'acres': 1013322, 'peak visitation': 'July', 'fun fact': 'Glacier National Park is also known as the "Crown of the Continent.""'},
-  {'park': 'Joshua Tree'}
+  {'park': 'Acadia', 'acres': 47633, 'peak visitation': 'July', 'fun fact': 'Located in Maine, it is said that Acadia's Cadillac Mountain is the first place in the United States to get sunlight in the morning.},
+  {'park': 'Olympic', 'acres': 922650 , 'peak visitation': 'July', 'fun fact': 'Within Olympic, there are three distinct ecosystems: subalpine forest and wildflower meadow, temperate forest, and the rugged Pacific coast'},
+  {'park': 'Grand Teton', 'acres': 310000, 'peak visitation': 'July', 'fun fact':'Being the youngest mountain range in the Rocky Mountains, very little erosion has taken place, which allows for such an amazing landscape.'},
+  {'park': 'Glacier', 'acres': 1013322, 'peak visitation': 'July', 'fun fact': 'Glacier National Park is also known as the "Crown of the Continent."'},
+  {'park': 'Joshua Tree', 'acres': 790636, 'peak visitation': 'July', 'fun fact':'Joshua Tree is named for the Joshua trees (Yucca brevifolia) native to the park.'}
 ];
 
 const log = console.log;
