@@ -129,7 +129,7 @@ function ridgelinePlot(responses) {
               .html("Number of acres: " + info[i]['acres'].toLocaleString())
           .append("text")
               .attr("class", "text--month")
-              .html("Peak visitation month: " + info[i]['peak visitation'] + '<br>')
+              .html("Peak visitation month: " + '<br>')
           .append("text")
               .attr("class", "text--extra")
               .html(info[i]['fun fact']);
