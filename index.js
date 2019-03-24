@@ -122,6 +122,7 @@ function ridgelinePlot(responses) {
 
     function handleMouseOver(d, i) { //d: data in format {month, value}, i: index
       d3.select(this).attr("class", "hover");
+      d3.select(".text--info").html(" ")
       d3.select(".text--info").style('visibility', 'visible');
       d3.select(".text--info").html(info[i]['park'].toString()) //display name of park at bottom
           .append("text")
