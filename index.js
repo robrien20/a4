@@ -127,10 +127,10 @@ function ridgelinePlot(responses) {
       d3.select(".text--info").html(info[i]['park'].toString()) //display name of park at bottom
           .append("text")
               .attr("class", "text--blurb")
-              .html("Number of acres: " + info[i]['acres'].toLocaleString() + "<br>                          Peak visitation month: " + info[i]['peak visitation'])
+              .html("Number of acres: " + info[i]['acres'].toLocaleString() + Peak visitation month: " + info[i]['peak visitation'])
           .append("text")
               .attr("class", "text--extra")
-              .html('        <blockquote>' + info[i]['fun fact'] + '</blockquote>');
+              .html( info[i]['fun fact']);
     }
 
     function handleMouseOut(d, i) {
