@@ -15,7 +15,7 @@ var info = [
 const log = console.log;
 const margin = {top: 250, right: 0, bottom: 0, left: 100};
 const width = 700 - margin.left - margin.right;
-const height = 850 - margin.top - margin.bottom;
+const height = 800 - margin.top - margin.bottom;
 
 // define svg
 const svg = d3.select("body").append("svg")
