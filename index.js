@@ -135,6 +135,6 @@ function ridgelinePlot(responses) {
 
     function handleMouseOut(d, i) {
       d3.select(this).attr("class", "area");
-      //3.select(".text--info").style('visibility', 'hidden');
+      d3.select(".text--info").style('visibility', 'visible');
     }
 };
