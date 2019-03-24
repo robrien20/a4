@@ -127,7 +127,7 @@ function ridgelinePlot(responses) {
       d3.select(".text--info").html(info[i]['park'].toString() + "<br>") //display name of park at bottom
           .append("text")
               .attr("class", "text--blurb")
-              .html( "<div class=\"padded-multiline\"> + "Number of acres: " + info[i]['acres'].toLocaleString() + "<br>" + "        " + "Peak visitation month: " + info[i]['peak visitation'] + "</div><br>")
+              .html( "<div class=\"padded-multiline\">" + "Number of acres: " + info[i]['acres'].toLocaleString() + "<br>" + "        " + "Peak visitation month: " + info[i]['peak visitation'] + "</div><br>")
           .append("text")
               .attr("class", "text--extra")
               .html( info[i]['fun fact']);
