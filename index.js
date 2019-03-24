@@ -1,15 +1,15 @@
 var info = [
-  {'park': 'Smoky Mountains', 'acres': 522427, 'peak visitation': 'July - 1492508 Recreational Visits', 'fun fact': 'The Smoky Mountains are among the oldest in the world - it is estimated the mountains in the Great Smoky Mountains National Park are between 200 and 300 million years old.'},
-  {'park': 'Grand Canyon', 'acres': 1217403, 'peak visitation': 'July - 837258 Recreational Visits', 'fun fact': 'The Grand Canyon is ~70 million years old, carved by the Colorado River.'},
-  {'park': 'Zion', 'acres': 147551, 'peak visitation': 'July - 576349 Recreational Visits', 'fun fact': "Visitors can choose to explore Zion's The Subway, which involves rapelling and swimming."},
-  {'park': 'Rocky Mountains', 'acres': 265461, 'peak visitation': 'July - 885478 Recreational Visits', 'fun fact': 'The Rocky Mountains are 76 million years old and their highest peak is Mount Elbert in Colorado which is 14,440 feet tall'},
-  {'park': 'Yosemite', 'acres': 761266, 'peak visitation': 'July - 633351 Recreational Visits', 'fun fact': 'During mid-late February, the waterfall Horsetail Fall appears to glow during sunsets.'},
-  {'park': 'Yellowstone', 'acres': 2200000, 'peak visitation': 'July - 962404 Recreational Visits', 'fun fact': 'Yellowstone is thought to be the first national park in the world.'},
-  {'park': 'Acadia', 'acres': 47633, 'peak visitation': 'August - 762436 Recreational Visits', 'fun fact': 'Located in Maine, it is said that Acadias Cadillac Mountain is the first place in the United States to get sunlight in the morning.'},
-  {'park': 'Olympic', 'acres': 922650 , 'peak visitation': 'August - 764282 Recreational Visits', 'fun fact': 'Within Olympic, there are three distinct ecosystems: subalpine forest and wildflower meadow, temperate forest, and the rugged Pacific coast'},
-  {'park': 'Grand Teton', 'acres': 310000, 'peak visitation': 'July - 739046 Recreational Visits' , 'fun fact':'Being the youngest mountain range in the Rocky Mountains, very little erosion has taken place, which allows for such an amazing landscape.'},
-  {'park': 'Glacier', 'acres': 1013322, 'peak visitation': 'July - 1009665 Recreational Visits', 'fun fact': 'Glacier National Park is also known as the "Crown of the Continent."'},
-  {'park': 'Joshua Tree', 'acres': 790636, 'peak visitation': 'March - 404545 Recreational Visits', 'fun fact':'Joshua Tree is named for the Joshua trees (Yucca brevifolia) native to the park.'}
+  {'park': 'Smoky Mountains', 'acres': 522427, 'peak visitation': 'July - 1,492,508 Recreational Visits', 'fun fact': 'The Smoky Mountains are among the oldest in the world - it is estimated the mountains in the Great Smoky Mountains National Park are between 200 and 300 million years old.'},
+  {'park': 'Grand Canyon', 'acres': 1217403, 'peak visitation': 'July - 837,258 Recreational Visits', 'fun fact': 'The Grand Canyon is ~70 million years old, carved by the Colorado River.'},
+  {'park': 'Zion', 'acres': 147551, 'peak visitation': 'July - 576,349 Recreational Visits', 'fun fact': "Visitors can choose to explore Zion's The Subway, which involves rapelling and swimming."},
+  {'park': 'Rocky Mountains', 'acres': 265461, 'peak visitation': 'July - 885,478 Recreational Visits', 'fun fact': 'The Rocky Mountains are 76 million years old and their highest peak is Mount Elbert in Colorado which is 14,440 feet tall'},
+  {'park': 'Yosemite', 'acres': 761266, 'peak visitation': 'July - 633,351 Recreational Visits', 'fun fact': 'During mid-late February, the waterfall Horsetail Fall appears to glow during sunsets.'},
+  {'park': 'Yellowstone', 'acres': 2200000, 'peak visitation': 'July - 962,404 Recreational Visits', 'fun fact': 'Yellowstone is thought to be the first national park in the world.'},
+  {'park': 'Acadia', 'acres': 47633, 'peak visitation': 'August - 762,436 Recreational Visits', 'fun fact': 'Located in Maine, it is said that Acadias Cadillac Mountain is the first place in the United States to get sunlight in the morning.'},
+  {'park': 'Olympic', 'acres': 922650 , 'peak visitation': 'August - 764,282 Recreational Visits', 'fun fact': 'Within Olympic, there are three distinct ecosystems: subalpine forest and wildflower meadow, temperate forest, and the rugged Pacific coast'},
+  {'park': 'Grand Teton', 'acres': 310000, 'peak visitation': 'July - 739,046 Recreational Visits' , 'fun fact':'Being the youngest mountain range in the Rocky Mountains, very little erosion has taken place, which allows for such an amazing landscape.'},
+  {'park': 'Glacier', 'acres': 1013322, 'peak visitation': 'July - 1,009,665 Recreational Visits', 'fun fact': 'Glacier National Park is also known as the "Crown of the Continent."'},
+  {'park': 'Joshua Tree', 'acres': 790636, 'peak visitation': 'March - 404,545 Recreational Visits', 'fun fact':'Joshua Tree is named for the Joshua trees (Yucca brevifolia) native to the park.'}
 ];
 
 const log = console.log;
@@ -127,7 +127,7 @@ function ridgelinePlot(responses) {
       d3.select(".text--info").html(info[i]['park'].toString() ) //display name of park at bottom
           .append("text")
               .attr("class", "text--blurb")
-              .html( "<br> <div class=\"padded-multiline\">" + "Number of acres: " + info[i]['acres'].toLocaleString() + "<br>" + "        " + "Peak visitation month: " + info[i]['peak visitation'] + "</div><br>")
+              .html( "<div class=\"padded-multiline\"><br>" + "Number of acres: " + info[i]['acres'].toLocaleString() + "<br>" + "        " + "Peak visitation month: " + info[i]['peak visitation'] + "</div><br>")
           .append("text")
               .attr("class", "text--extra")
               .html( info[i]['fun fact']);
